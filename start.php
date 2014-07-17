@@ -19,6 +19,9 @@ function alumni_init() {
 	elgg_register_library('elgg:alumni', elgg_get_plugins_path() . 'alumni/lib/alumni.php');
 	elgg_load_library('elgg:alumni');
 
+	// Extend user icon view
+	elgg_extend_view('icon/user/default', 'icon/user/alumni', 1);
+
 	// Pagesetup event handler
 	elgg_register_event_handler('pagesetup', 'system', 'alumni_pagesetup');
 
