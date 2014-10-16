@@ -9,7 +9,7 @@
  * @link http://www.thinkglobalschool.org
  */
 
-return array(
+$english = array(
 	// General/Built In
 
 	// Menus
@@ -41,3 +41,5 @@ return array(
 
 	// River
 );
+
+add_translation('en',$english);
